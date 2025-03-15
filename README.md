@@ -74,7 +74,23 @@ Here, we measure the mean scores and fit times of four different classifiers, as
   - Test Score: 88.42%
   - Average Fit Time: 29.2099 seconds
     
-Furthermore, we provide a classification report, including precision, recall, and F1 scores for each classifier, as shown below:
+Furthermore, we provide a classification report, including precision, recall, and F1 scores for each classifier, as in the notebook:
+- Logistic Regression Final
+  - Accuracy: 88.85%
+  - prescision: 60.51%
+  - recal: 21.91%
+- Decision Tree 
+  - Accuracy: 87.05%
+  - prescision: 46.48%
+  - recal: 48.40%
+- K-Nearest Neighbors 
+  - Accuracy: 87.55%
+  - prescision: 47.26%
+  - recal: 27.68%
+- Support Vector Machine 
+  - Accuracy: 87.95%
+  - prescision: 53.85%
+  - recal: 0.64%
 
  ## Findings for all classifiers:
 - * Logistic Regression shows excellent generalization with a nearly identical train score (89.15%) and test score (89.14%), indicating that it performs well on both training and unseen data. The average fit time of 0.4392 seconds suggests it is relatively fast to train.
@@ -87,8 +103,7 @@ Furthermore, we provide a classification report, including precision, recall, an
  ## Conclusion: 
 - From our analysis, the models shows that Logistic Regression achieved the highest accuracy at 88.85%, outperforming the other models. The Support Vector Machine came close with an accuracy of 87.95%, followed by K-Nearest Neighbors at 87.55%, and Decision Tree with the lowest accuracy of 87.05%. 
 
-Overall,  Logistic Regression and Support Vector Machine provide the best generalization with similar test scores, though Logistic Regression is faster.
-Decision Tree suffers from overfitting, while K-Nearest Neighbors strikes a balance between accuracy and training speed.
+Overall, Logistic Regression and Support Vector Machine provide the best generalization with similar test scores, which also contributes to the highest F1 scores (94%) exhibited by both models. However, Logistic Regression is faster. Decision Tree suffers from overfitting, while K-Nearest Neighbors strikes a balance between accuracy and training speed.
 ## Contribution
 >>by GN Balekaki<<
 
